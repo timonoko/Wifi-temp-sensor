@@ -1,8 +1,6 @@
 #! /usr/bin/python3
 # Keep the dough at 37°C
 
-
-
 import os,time
 
 def led(x):
@@ -14,7 +12,7 @@ def led(x):
 def temp():
      return eval(os.popen('bash get_temp').read())
 
-def rele(x): # heat gun connected to wifi-plug
+def rele(x): # heat gun connected to a wifi-plug
     if x==1:
         os.system('curl-silent 192.168.1.62/5/on')
     else:
