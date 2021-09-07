@@ -11,9 +11,6 @@ Ledi = machine.Pin(1, machine.Pin.OUT)
 Ledi.value(0)
 
 adc = machine.ADC(0)
-#while True: print(adc.read()); time.sleep(1)
-
-# 0=608 23=788
 
 def kor(x):
     return round(23.*(x-608)/(788-608),2)
